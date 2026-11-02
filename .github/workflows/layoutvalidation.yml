@@ -23,3 +23,15 @@ jobs:
     - name: Run tests on layouts
       run: |
         python tests/python-test.py
+
+  xkb-catalog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.12'
+    - name: Install consumer library
+      run: pip install layouts
+    - name: Validate imported catalog and consumer compatibility
+      run: python -m unittest discover -s tests -p 'test_*.py'

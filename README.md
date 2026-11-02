@@ -25,6 +25,11 @@ If you are wondering where to add your own layout, this is where it should go.
 * [base](base)
 * [keyboards](keyboards)
 
+Ubuntu's installed XKB layouts and variants are also available as `xkb:<layout>`
+and `xkb:<layout>(<variant>)`, for example `xkb:gb`, `xkb:us(dvorak)`, and
+`xkb:be(nodeadkeys)`. See the [complete catalog](tools/xkb-catalog.tsv) and
+[import instructions](tools/README.md) for sources, verification, and limitations.
+
 
 ## Tests
 

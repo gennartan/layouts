@@ -11,6 +11,13 @@ The [Belgian AZERTY layout](fr_BE.json) (`fr_BE`, `nl_BE`, `BE`, or `Belgian`)
 uses Ubuntu's default XKB `be(basic)` layout from
 `/usr/share/X11/xkb/symbols/be`, including Shift, AltGr, and dead-key compositions.
 
+The generated `xkb_*.json` files cover the installed XKB standard and extra
+catalogs, including variants. Their aliases use the XKB identifiers, such as
+`xkb:be` and `xkb:be(oss)`. Exact duplicates with the same USB HID locale share
+a file. Existing locale aliases continue to select the manually maintained
+layouts. See the [catalog](../tools/xkb-catalog.tsv) and
+[import documentation](../tools/README.md).
+
 The main ask is that the layout filename is a descriptive as possible and that there are no alias name conflicts with other layouts.
 
 Please run the `layouts-validator` program as it will check to make sure there are no conflicts.

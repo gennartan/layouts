@@ -1,0 +1,6 @@
+xkb-data: 2.46-2
+Compose SHA256: a3077ce7fdae43776b9a485d8a9689c0bfeb0cd17348a87b7a06818e59554ea1
+Catalog entries: 748
+Unique generated layouts: 702
+Verified compositions across entries: 255029
+Unavailable: custom: no installed definition (user-defined placeholder)
