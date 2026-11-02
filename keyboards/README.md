@@ -7,6 +7,10 @@ Locale base layouts (e.g. AZERTY, QWERTZ-DE, etc.) usually belong here, unless y
 In which case, it can live under [base](../base).
 Alternative layout configurations such as Dvorak, Colemak definitely belong here.
 
+The [Belgian AZERTY layout](fr_BE.json) (`fr_BE`, `nl_BE`, `BE`, or `Belgian`)
+uses Ubuntu's default XKB `be(basic)` layout from
+`/usr/share/X11/xkb/symbols/be`, including Shift, AltGr, and dead-key compositions.
+
 The main ask is that the layout filename is a descriptive as possible and that there are no alias name conflicts with other layouts.
 
 Please run the `layouts-validator` program as it will check to make sure there are no conflicts.
